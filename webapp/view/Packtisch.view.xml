@@ -18,15 +18,15 @@
 				        <ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Packstücke" text="Text" id="__identifier1_copy5"/>
 				    </sap.ui.layout:content>
 				    </sap.ui.layout:Grid>
-				    <IconTabBar selectedKey="__filter1" id="__bar1">
+				    <IconTabBar selectedKey="__filter1" id="icontabbar">
 				        <items>
-				            <IconTabFilter text="Scan" icon="sap-icon://product" iconColor="Negative" id="__filter1">
+				            <IconTabFilter text="Scan" icon="sap-icon://product" iconColor="Negative" id="filterscan">
 				            <content>
 				                <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="__form0" validationSuccess="onFormSuccess">
 				                    <sap.ui.layout.form:content>
 				                        <sap.ui.core:Title text="Bitte tragen Sie eine Nummer ein:" id="__title0" validationSuccess="onFormSuccess" validationError="onFormError" modelContextChange="FormOnModelContextChange"/>
 				                        <Label text="Barcodescan" id="__label0"/>
-				                        <Input width="100%" id="__input1" validationSuccess="onFormSuccess" submit="onFormSubmit"/>
+				                        <Input width="100%" id="inputBarcodescan" validationSuccess="onFormSuccess" submit="onFormSubmit"/>
 				                        <Label id="Auslieferung" text="Auslieferung"/>
 				                        <Input width="100%" id="__input2" submit="onFormSubmit"/>
 										<Label id="Transport" text="Transport"/>
@@ -145,7 +145,7 @@
 				                    <sap.ui.layout:content>
 				                        <Image width="150px" height="140px" id="__image1" src="https://placehold.it/300x300"/>
 				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="gewählte Verpackung" id="__identifier1_copy6" text="Europalette"/><Text text="Kopftext(e):" maxLines="0" id="__text77"/>
-				                        <Input width="100%" id="__imageinput2"/>
+				                        <Input width="100%" id="__imageinput2" submit="submitKopftext"/>
 				                    </sap.ui.layout:content>
 				                    </sap.ui.layout:Grid>
 				                    <Bar id="__bar3">
