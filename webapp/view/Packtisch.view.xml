@@ -1,4 +1,4 @@
-<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="mcl.controller.Packtisch">
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="mcl.controller.Packtisch" viewName="packtisch" afterInit="afterinit" afterRendering="PacktischViewAfterRender">
 	<App>
 		<pages>
 			<Page title="{i18n>title}">
@@ -18,21 +18,21 @@
 				        <ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Packstücke" text="Text" id="__identifier1_copy5"/>
 				    </sap.ui.layout:content>
 				    </sap.ui.layout:Grid>
-				    <IconTabBar selectedKey="__filter1" id="icontabbar">
+				    <IconTabBar selectedKey="filterscan" id="icontabbar">
 				        <items>
-				            <IconTabFilter text="Scan" icon="sap-icon://product" iconColor="Negative" id="filterscan">
+				            <IconTabFilter text="Scan" icon="sap-icon://product" iconColor="Negative" key="filterscan" id="filterscan">
 				            <content>
 				                <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="__form0" validationSuccess="onFormSuccess">
 				                    <sap.ui.layout.form:content>
 				                        <sap.ui.core:Title text="Bitte tragen Sie eine Nummer ein:" id="__title0" validationSuccess="onFormSuccess" validationError="onFormError" modelContextChange="FormOnModelContextChange"/>
 				                        <Label text="Barcodescan" id="__label0"/>
-				                        <Input width="100%" id="inputBarcodescan" validationSuccess="onFormSuccess" submit="onFormSubmit"/>
+				                        <Input width="100%" id="BarcodescanInput" validationSuccess="" submit=""/>
 				                        <Label id="Auslieferung" text="Auslieferung"/>
-				                        <Input width="100%" id="__input2" submit="onFormSubmit"/>
+				                        <Input width="100%" id="AuslieferungInput" submit="focustest"/>
 										<Label id="Transport" text="Transport"/>
-				                        <Input width="100%" id="__input3" submit="onFormSubmit"/>
+				                        <Input width="100%" id="TransportInput" submit="onFormSubmit"/>
 				                        <Label id="SD-Nummer" text="SD-Nummer"/>
-				                        <Input width="100%" id="__input4" submit="onFormSubmit"/></sap.ui.layout.form:content>
+				                        <Input width="100%" id="SDNummerInput" submit="onFormSubmit"/></sap.ui.layout.form:content>
 				                <sap.ui.layout.form:customData>
 				                    <sap.ui.core:CustomData key="w5g.dt.editable" value="true" id="__data14"/>
 				                </sap.ui.layout.form:customData>
@@ -40,7 +40,7 @@
 				            </content>
 				            </IconTabFilter>
 				            <IconTabSeparator id="__separator2"/>
-				            <IconTabFilter xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Pack" icon="sap-icon://add-product" iconColor="Critical" id="__filter1_copy2">
+				            <IconTabFilter xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Pack" icon="sap-icon://add-product" iconColor="Critical" key="filterpack" id="filterpack">
 				                <content>
 				                    <Bar id="__bar4">
 				                        <contentRight>
@@ -59,7 +59,7 @@
 				                            <sap.ui.layout:content>
 				                                <Text text="Umverpackung" maxLines="0" id="__text60"/>
 				                                <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" src="sap-icon://bar-code" size="3em" id="__icon0"/>
-				                                <CheckBox xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" id="__box0" text="auswählen"/>
+				                                <CheckBox xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" id="__box0" text="auswählen" select="selectPackmittel"/>
 				                            </sap.ui.layout:content>
 				                            </sap.ui.layout:Grid>
 				                        </sap.ui.layout:content>
@@ -139,7 +139,7 @@
 				                </content>
 				            </IconTabFilter>
 				            <IconTabSeparator id="__separator0"/>
-				            <IconTabFilter text="Send" icon="sap-icon://shipping-status" iconColor="Positive" id="__filter2">
+				            <IconTabFilter text="Send" icon="sap-icon://shipping-status" iconColor="Positive" key="filtersend" id="filtersend">
 				                <content>
 				                    <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="__grid5">
 				                    <sap.ui.layout:content>
