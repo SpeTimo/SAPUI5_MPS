@@ -1,0 +1,201 @@
+[{
+	"PackmittelID": 8912,
+	"Name": "Name 1",
+	"Bild": "Bild 1",
+	"laenge": "laenge 1",
+	"hoehe": "hoehe 1",
+	"breite": "breite 1",
+	"maxLadungsgewicht": "maxLadungsgewicht 1",
+	"maxVolumen": "maxVolumen 1",
+	"eigengewicht": "eigengewicht 1",
+	"eigenvolumen": "eigenvolumen 1",
+	"__metadata": {
+		"uri": "PackmittelSet(8912)",
+		"type": "MPacktischFiori.Packmittel"
+	},
+	"HandlingUnitSet": {
+		"__deferred": {
+			"uri": "PackmittelSet(8912)/HandlingUnitSet"
+		}
+	}
+}, {
+	"PackmittelID": 436,
+	"Name": "Name 2",
+	"Bild": "Bild 2",
+	"laenge": "laenge 2",
+	"hoehe": "hoehe 2",
+	"breite": "breite 2",
+	"maxLadungsgewicht": "maxLadungsgewicht 2",
+	"maxVolumen": "maxVolumen 2",
+	"eigengewicht": "eigengewicht 2",
+	"eigenvolumen": "eigenvolumen 2",
+	"__metadata": {
+		"uri": "PackmittelSet(436)",
+		"type": "MPacktischFiori.Packmittel"
+	},
+	"HandlingUnitSet": {
+		"__deferred": {
+			"uri": "PackmittelSet(436)/HandlingUnitSet"
+		}
+	}
+}, {
+	"PackmittelID": 9457,
+	"Name": "Name 3",
+	"Bild": "Bild 3",
+	"laenge": "laenge 3",
+	"hoehe": "hoehe 3",
+	"breite": "breite 3",
+	"maxLadungsgewicht": "maxLadungsgewicht 3",
+	"maxVolumen": "maxVolumen 3",
+	"eigengewicht": "eigengewicht 3",
+	"eigenvolumen": "eigenvolumen 3",
+	"__metadata": {
+		"uri": "PackmittelSet(9457)",
+		"type": "MPacktischFiori.Packmittel"
+	},
+	"HandlingUnitSet": {
+		"__deferred": {
+			"uri": "PackmittelSet(9457)/HandlingUnitSet"
+		}
+	}
+}, {
+	"PackmittelID": 7299,
+	"Name": "Name 4",
+	"Bild": "Bild 4",
+	"laenge": "laenge 4",
+	"hoehe": "hoehe 4",
+	"breite": "breite 4",
+	"maxLadungsgewicht": "maxLadungsgewicht 4",
+	"maxVolumen": "maxVolumen 4",
+	"eigengewicht": "eigengewicht 4",
+	"eigenvolumen": "eigenvolumen 4",
+	"__metadata": {
+		"uri": "PackmittelSet(7299)",
+		"type": "MPacktischFiori.Packmittel"
+	},
+	"HandlingUnitSet": {
+		"__deferred": {
+			"uri": "PackmittelSet(7299)/HandlingUnitSet"
+		}
+	}
+}, {
+	"PackmittelID": 9620,
+	"Name": "Name 5",
+	"Bild": "Bild 5",
+	"laenge": "laenge 5",
+	"hoehe": "hoehe 5",
+	"breite": "breite 5",
+	"maxLadungsgewicht": "maxLadungsgewicht 5",
+	"maxVolumen": "maxVolumen 5",
+	"eigengewicht": "eigengewicht 5",
+	"eigenvolumen": "eigenvolumen 5",
+	"__metadata": {
+		"uri": "PackmittelSet(9620)",
+		"type": "MPacktischFiori.Packmittel"
+	},
+	"HandlingUnitSet": {
+		"__deferred": {
+			"uri": "PackmittelSet(9620)/HandlingUnitSet"
+		}
+	}
+}, {
+	"PackmittelID": 6597,
+	"Name": "Name 6",
+	"Bild": "Bild 6",
+	"laenge": "laenge 6",
+	"hoehe": "hoehe 6",
+	"breite": "breite 6",
+	"maxLadungsgewicht": "maxLadungsgewicht 6",
+	"maxVolumen": "maxVolumen 6",
+	"eigengewicht": "eigengewicht 6",
+	"eigenvolumen": "eigenvolumen 6",
+	"__metadata": {
+		"uri": "PackmittelSet(6597)",
+		"type": "MPacktischFiori.Packmittel"
+	},
+	"HandlingUnitSet": {
+		"__deferred": {
+			"uri": "PackmittelSet(6597)/HandlingUnitSet"
+		}
+	}
+}, {
+	"PackmittelID": 3870,
+	"Name": "Name 7",
+	"Bild": "Bild 7",
+	"laenge": "laenge 7",
+	"hoehe": "hoehe 7",
+	"breite": "breite 7",
+	"maxLadungsgewicht": "maxLadungsgewicht 7",
+	"maxVolumen": "maxVolumen 7",
+	"eigengewicht": "eigengewicht 7",
+	"eigenvolumen": "eigenvolumen 7",
+	"__metadata": {
+		"uri": "PackmittelSet(3870)",
+		"type": "MPacktischFiori.Packmittel"
+	},
+	"HandlingUnitSet": {
+		"__deferred": {
+			"uri": "PackmittelSet(3870)/HandlingUnitSet"
+		}
+	}
+}, {
+	"PackmittelID": 3340,
+	"Name": "Name 8",
+	"Bild": "Bild 8",
+	"laenge": "laenge 8",
+	"hoehe": "hoehe 8",
+	"breite": "breite 8",
+	"maxLadungsgewicht": "maxLadungsgewicht 8",
+	"maxVolumen": "maxVolumen 8",
+	"eigengewicht": "eigengewicht 8",
+	"eigenvolumen": "eigenvolumen 8",
+	"__metadata": {
+		"uri": "PackmittelSet(3340)",
+		"type": "MPacktischFiori.Packmittel"
+	},
+	"HandlingUnitSet": {
+		"__deferred": {
+			"uri": "PackmittelSet(3340)/HandlingUnitSet"
+		}
+	}
+}, {
+	"PackmittelID": 5341,
+	"Name": "Name 9",
+	"Bild": "Bild 9",
+	"laenge": "laenge 9",
+	"hoehe": "hoehe 9",
+	"breite": "breite 9",
+	"maxLadungsgewicht": "maxLadungsgewicht 9",
+	"maxVolumen": "maxVolumen 9",
+	"eigengewicht": "eigengewicht 9",
+	"eigenvolumen": "eigenvolumen 9",
+	"__metadata": {
+		"uri": "PackmittelSet(5341)",
+		"type": "MPacktischFiori.Packmittel"
+	},
+	"HandlingUnitSet": {
+		"__deferred": {
+			"uri": "PackmittelSet(5341)/HandlingUnitSet"
+		}
+	}
+}, {
+	"PackmittelID": 2476,
+	"Name": "Name 10",
+	"Bild": "Bild 10",
+	"laenge": "laenge 10",
+	"hoehe": "hoehe 10",
+	"breite": "breite 10",
+	"maxLadungsgewicht": "maxLadungsgewicht 10",
+	"maxVolumen": "maxVolumen 10",
+	"eigengewicht": "eigengewicht 10",
+	"eigenvolumen": "eigenvolumen 10",
+	"__metadata": {
+		"uri": "PackmittelSet(2476)",
+		"type": "MPacktischFiori.Packmittel"
+	},
+	"HandlingUnitSet": {
+		"__deferred": {
+			"uri": "PackmittelSet(2476)/HandlingUnitSet"
+		}
+	}
+}]

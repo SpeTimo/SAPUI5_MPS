@@ -1,417 +1,180 @@
-<<<<<<< HEAD
-<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="mcl.controller.Packtisch" viewName="packtisch" afterInit="afterinit" afterRendering="PacktischViewAfterRender" id="packtisch">
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="mcl.controller.Packtisch" viewName="packtisch" afterInit="afterinit" afterRendering="onAfterRendering" id="packtisch">
 	<App>
 		<pages>
 			<Page title="{i18n>title}">
 				<content>
-				    <Bar id="__bar0">
-				        <contentLeft>
-				            <Label text="Kopfdaten" width="100%" id="lbl_kopfdaten" design="Bold"/>
-				        </contentLeft>
-				    </Bar>
-				    <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="__grid1" class="sapUiSmallMarginTop" defaultSpan="XL4 L4 M6 S6">
-				    <sap.ui.layout:content>
-				        <ObjectIdentifier title="Auslieferung" id="__identifier1" text="xxx"/>
-				        <ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Belegdatum" text="Text" id="__identifier1_copy"/>
-				        <ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Empfänger" text="Text" id="__identifier1_copy2"/>
-				        <ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Adresse" text="Text" id="__identifier1_copy3"/>
-				        <ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Positionen" text="Text" id="__identifier1_copy4"/>
-				        <ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Packstücke" text="Text" id="__identifier1_copy5"/>
-				    </sap.ui.layout:content>
-				    </sap.ui.layout:Grid>
-				    <IconTabBar selectedKey="filterscan" id="icontabbar">
-				        <items>
-				            <IconTabFilter text="Scan" icon="sap-icon://product" iconColor="Negative" key="filterscan" id="filterscan">
-				            <content>
-				                <sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="__form0" validationSuccess="onFormSuccess">
-				                    <sap.ui.layout.form:content>
-				                        <sap.ui.core:Title text="Bitte tragen Sie eine Nummer ein:" id="__title0" validationSuccess="onFormSuccess" validationError="onFormError" modelContextChange="FormOnModelContextChange"/>
-				                        <Label text="Barcodescan" id="__label0"/>
-				                        <Input width="100%" id="BarcodescanInput" validationSuccess="" submit="onFormSubmit"/>
-				                        <Label id="Auslieferung" text="Auslieferung"/>
-				                        <Input width="100%" id="AuslieferungInput" submit="focustest"/>
-										<Label id="Transport" text="Transport"/>
-				                        <Input width="100%" id="TransportInput" submit="onFormSubmit"/>
-				                        <Label id="SD-Nummer" text="SD-Nummer"/>
-				                        <Input width="100%" id="SDNummerInput" submit="onFormSubmit"/></sap.ui.layout.form:content>
-				                <sap.ui.layout.form:customData>
-				                    <sap.ui.core:CustomData key="w5g.dt.editable" value="true" id="__data14"/>
-				                </sap.ui.layout.form:customData>
-				                </sap.ui.layout.form:SimpleForm>
-				            </content>
-				            </IconTabFilter>
-				            <IconTabSeparator id="__separator2"/>
-				            <IconTabFilter xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Pack" icon="sap-icon://add-product" iconColor="Critical" key="filterpack" id="filterpack">
-				                <content>
-				                    <Bar id="__bar4">
-				                        <contentRight>
-				                            <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://action-settings" size="2em" id="__icon2"/>
-				                        </contentRight>
-				                    <contentLeft>
-				                        <Label text="Verpackung auswählen" width="100%" id="__label3"/>
-				                    </contentLeft>
-				                    </Bar>
-				                    <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="__grid0" class="sapUiSmallMarginTop" defaultSpan="XL4 L4 M6 S12">
-				                    <sap.ui.layout:content>
-				                        <sap.ui.layout:Grid id="__grid2" defaultSpan="XL6 L6 M6 S12">
-				                        <sap.ui.layout:content>
-				                            <Image width="140px" height="140px" id="__image0" src="https://placehold.it/300x300"/>
-				                            <sap.ui.layout:Grid id="__grid4" defaultSpan="XL12 L12 M12 S12">
-				                            <sap.ui.layout:content>
-				                                <Text text="Umverpackung" maxLines="0" id="__text60"/>
-				                                <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" src="sap-icon://bar-code" size="3em" id="__icon0"/>
-				                                <CheckBox xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" id="__box0" text="auswählen" select="selectPackmittel"/>
-				                            </sap.ui.layout:content>
-				                            </sap.ui.layout:Grid>
-				                        </sap.ui.layout:content>
-				                        </sap.ui.layout:Grid>
-				                        <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid2_copy" defaultSpan="XL6 L6 M6 S12">
-				                            <sap.ui.layout:content>
-				                                <Image xmlns="sap.m" width="140px" height="140px" id="__image0_copy" src="https://placehold.it/300x300"/>
-				                                <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid4_copy" defaultSpan="XL12 L12 M12 S12">
-				                                    <sap.ui.layout:content>
-				                                        <Text xmlns="sap.m" text="Umverpackung" maxLines="0" id="__text60_copy"/>
-				                                        <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" src="sap-icon://bar-code" size="3em" id="__icon0_copy"/>
-				                                        <CheckBox xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" id="__box0_copy" text="auswählen"/>
-				                                        </sap.ui.layout:content>
-				                                    
-				                                </sap.ui.layout:Grid>
-				                                </sap.ui.layout:content>
-				                            
-				                        </sap.ui.layout:Grid>
-				                        <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid2_copy2" defaultSpan="XL6 L6 M6 S12">
-				                            <sap.ui.layout:content>
-				                                <Image xmlns="sap.m" width="140px" height="140px" id="__image0_copy2" src="https://placehold.it/300x300"/>
-				                                <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid4_copy2" defaultSpan="XL12 L12 M12 S12">
-				                                    <sap.ui.layout:content>
-				                                        <Text xmlns="sap.m" text="Umverpackung" maxLines="0" id="__text60_copy2"/>
-				                                        <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" src="sap-icon://bar-code" size="3em" id="__icon0_copy2"/>
-				                                        <CheckBox xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" id="__box0_copy2" text="auswählen"/>
-				                                        </sap.ui.layout:content>
-				                                    
-				                                </sap.ui.layout:Grid>
-				                                </sap.ui.layout:content>
-				                            
-				                        </sap.ui.layout:Grid>
-				                        <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid2_copy3" defaultSpan="XL6 L6 M6 S12">
-				                            <sap.ui.layout:content>
-				                                <Image xmlns="sap.m" width="140px" height="140px" id="__image0_copy3" src="https://placehold.it/300x300"/>
-				                                <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid4_copy3" defaultSpan="XL12 L12 M12 S12">
-				                                    <sap.ui.layout:content>
-				                                        <Text xmlns="sap.m" text="Umverpackung" maxLines="0" id="__text60_copy3"/>
-				                                        <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" src="sap-icon://bar-code" size="3em" id="__icon0_copy3"/>
-				                                        <CheckBox xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" id="__box0_copy3" text="auswählen"/>
-				                                        </sap.ui.layout:content>
-				                                    
-				                                </sap.ui.layout:Grid>
-				                                </sap.ui.layout:content>
-				                            
-				                        </sap.ui.layout:Grid>
-				                        <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid2_copy4" defaultSpan="XL6 L6 M6 S12">
-				                            <sap.ui.layout:content>
-				                                <Image xmlns="sap.m" width="140px" height="140px" id="__image0_copy4" src="https://placehold.it/300x300"/>
-				                                <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid4_copy4" defaultSpan="XL12 L12 M12 S12">
-				                                    <sap.ui.layout:content>
-				                                        <Text xmlns="sap.m" text="Umverpackung" maxLines="0" id="__text60_copy4"/>
-				                                        <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" src="sap-icon://bar-code" size="3em" id="__icon0_copy4"/>
-				                                        <CheckBox xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" id="__box0_copy4" text="auswählen"/>
-				                                        </sap.ui.layout:content>
-				                                    
-				                                </sap.ui.layout:Grid>
-				                                </sap.ui.layout:content>
-				                            
-				                        </sap.ui.layout:Grid>
-				                        <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid2_copy5" defaultSpan="XL6 L6 M6 S12">
-				                            <sap.ui.layout:content>
-				                                <Image xmlns="sap.m" width="140px" height="140px" id="__image0_copy5" src="https://placehold.it/300x300"/>
-				                                <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid4_copy5" defaultSpan="XL12 L12 M12 S12">
-				                                    <sap.ui.layout:content>
-				                                        <Text xmlns="sap.m" text="Umverpackung" maxLines="0" id="__text60_copy5"/>
-				                                        <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" src="sap-icon://bar-code" size="3em" id="__icon0_copy5"/>
-				                                        <CheckBox xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" id="__box0_copy5" text="auswählen"/>
-				                                        </sap.ui.layout:content>
-				                                    
-				                                </sap.ui.layout:Grid>
-				                                </sap.ui.layout:content>
-				                            
-				                        </sap.ui.layout:Grid>
-				                    </sap.ui.layout:content>
-				                    </sap.ui.layout:Grid>
-				                </content>
-				            </IconTabFilter>
-				            <IconTabSeparator id="__separator0"/>
-				            <IconTabFilter text="Send" icon="sap-icon://shipping-status" iconColor="Positive" key="filtersend" id="filtersend">
-				                <content>
-				                    <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="__grid5">
-				                    <sap.ui.layout:content>
-				                        <Image width="150px" height="140px" id="__image1" src="https://placehold.it/300x300"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="gewählte Verpackung" id="__identifier1_copy6" text="Europalette"/><Text text="Kopftext(e):" maxLines="0" id="__text77"/>
-				                        <Input width="100%" id="__imageinput2" submit="submitKopftext"/>
-				                    </sap.ui.layout:content>
-				                    </sap.ui.layout:Grid>
-				                    <Bar id="__bar3">
-				                        <contentLeft>
-				                            <Label text="Zusammenfassung" width="100%" id="__label1"/>
-				                        </contentLeft>
-				                    <contentRight>
-				                        <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://action-settings" size="2em" id="__icon1"/>
-				                    </contentRight>
-				                    </Bar>
-				                    <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="__grid6" class="sapUiSmallMarginTop" defaultSpan="XL3 L3 M4 S12">
-				                    <sap.ui.layout:content>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Handling Unit" id="__identifier1_copy7" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="ID-Art" id="__identifier1_copy8" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="HU intern" id="__identifier1_copy9" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Länge" id="__identifier1_copy10" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Höhe" id="__identifier1_copy11" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Breite" id="__identifier1_copy12" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Gesamtgewicht" id="__identifier1_copy13" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Ladungsgewicht" id="__identifier1_copy14" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="zulässiges Ladungsgewicht" id="__identifier1_copy15" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Eigengewicht" id="__identifier1_copy16" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Gesamtvolumen" id="__identifier1_copy17" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Ladungsvolumen" id="__identifier1_copy18" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="zulässiges Volumen" id="__identifier1_copy19" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Eigenvolumen" id="__identifier1_copy20" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Werk" id="__identifier1_copy21" text="xxx"/>
-				                        <Button text="Senden" width="200px" id="__button0" activeIcon="sap-icon://bar-code" icon="sap-icon://bar-code" iconFirst="false" press="onButtonSend" validationSuccess="onButtonSend"/>
-				                    </sap.ui.layout:content>
-				                    </sap.ui.layout:Grid>
-				                </content>
-				            </IconTabFilter></items>
-				    </IconTabBar>
-				    <sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="__form1">
-				        <sap.ui.layout.form:layout>
-				            <sap.ui.layout.form:ResponsiveGridLayout id="__layout0"/>
-				        </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
-=======
-<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="mcl.controller.Packtisch">
-	<App>
-		<pages>
-			<Page title="{i18n>title}">
-				<content>
-				    <Bar id="__bar0">
-				        <contentLeft>
-				            <Label text="Kopfdaten" width="100%" id="lbl_kopfdaten"/>
-				        </contentLeft>
-				    </Bar>
-				    <Toolbar width="100%" id="__toolbar1" design="Info">
-				        <content><ToolbarSpacer id="__spacer2"/>
-				        </content>
-				    </Toolbar>
-				    <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="__grid1" defaultSpan="XL4 L4 M6 S6">
-				    <sap.ui.layout:content>
-				        <ObjectIdentifier title="Auslieferung" id="__identifier1" text="xxx"/>
-				        <ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Belegdatum" text="Text" id="__identifier1_copy"/>
-				        <ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Empfänger" text="Text" id="__identifier1_copy2"/>
-				        <ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Adresse" text="Text" id="__identifier1_copy3"/>
-				        <ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Positionen" text="Text" id="__identifier1_copy4"/>
-				        <ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Packstücke" text="Text" id="__identifier1_copy5"/>
-				    </sap.ui.layout:content>
-				    </sap.ui.layout:Grid>
-				    <IconTabBar selectedKey="__filter1" id="__bar1">
-				        <items>
-				            <IconTabFilter text="Scan" icon="sap-icon://product" iconColor="Negative" id="__filter1">
-				            <content>
-				                <InputListItem type="Navigation" counter="0" label="Barcodescan" id="__item3">
-				                    <content>
-				                        <Input ariaLabelledBy="__item3-label" value="input" width="100%" id="__input0"/>
-				                    </content>
-				                </InputListItem>
-				                <InputListItem type="Navigation" counter="0" label="Auslieferung" id="__item4">
-				                    <content>
-				                        <Input ariaLabelledBy="__item4-label" value="input" width="100%" id="__input1"/>
-				                    </content>
-				                </InputListItem>
-				                <InputListItem ariaLabelledBy="__item4-label" type="Navigation" counter="0" label="Transport" id="__item6">
-				                    <content>
-				                        <Input ariaLabelledBy="__item6-label" value="input" width="100%" id="__input3"/>
-				                    </content>
-				                </InputListItem>
-				                <InputListItem xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" ariaLabelledBy="__item4-label" type="Navigation" counter="0" label="SD-Nummer" id="__item6_copy">
-				                    <content>
-				                        <Input ariaLabelledBy="__item6-label" value="input" width="100%" id="__input3_copy"/>
-				                        
-				                    </content>
-				                    
-				                </InputListItem>
-				            </content>
-				            </IconTabFilter>
-				            <IconTabSeparator id="__separator2"/>
-				            <IconTabFilter xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Pack" icon="sap-icon://add-product" iconColor="Critical" id="__filter1_copy2">
-				                <content>
-				                    <Bar id="__bar4">
-				                        <contentRight>
-				                            <sap.ui.core:Icon src="sap-icon://action-settings" size="2em" xmlns:sap.ui.core="sap.ui.core" id="__icon2"/>
-				                        </contentRight>
-				                    <contentLeft>
-				                        <Label text="Verpackung auswählen" width="100%" id="__label3"/>
-				                    </contentLeft>
-				                    </Bar>
-				                    <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="__grid0" defaultSpan="XL4 L4 M6 S12">
-				                    <sap.ui.layout:content>
-				                        <sap.ui.layout:Grid id="__grid2" defaultSpan="XL6 L6 M6 S12">
-				                        <sap.ui.layout:content>
-				                            <sap.ui.layout:Grid id="__grid3">
-				                            <sap.ui.layout:content>
-				                                <Image width="140px" height="140px" id="__image0" src="https://placehold.it/140x140" activeSrc="https://placehold.it/140x140"/>
-				                            </sap.ui.layout:content>
-				                            </sap.ui.layout:Grid>
-				                            <sap.ui.layout:Grid id="__grid4" defaultSpan="XL12 L12 M12 S12">
-				                            <sap.ui.layout:content>
-				                                <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://bar-code" size="2em" id="__icon0"/>
-				                                <Text text="Testverpackung" maxLines="0" id="__text326"/>
-				                                <CheckBox id="__box0" text="auswählen"/>
-				                            </sap.ui.layout:content>
-				                            </sap.ui.layout:Grid>
-				                        </sap.ui.layout:content>
-				                        </sap.ui.layout:Grid>
-				                        <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid2_copy" defaultSpan="XL6 L6 M6 S12">
-				                            <sap.ui.layout:content>
-				                                <sap.ui.layout:Grid id="__grid3_copy">
-				                                    <sap.ui.layout:content>
-				                                        <Image xmlns="sap.m" width="140px" height="140px" id="__image0_copy" src="https://placehold.it/140x140" activeSrc="https://placehold.it/140x140"/>
-				                                        
-				                                    </sap.ui.layout:content>
-				                                    
-				                                </sap.ui.layout:Grid>
-				                                <sap.ui.layout:Grid id="__grid4_copy" defaultSpan="XL12 L12 M12 S12">
-				                                    <sap.ui.layout:content>
-				                                        <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://bar-code" size="2em" id="__icon0_copy"/>
-				                                        <Text xmlns="sap.m" text="Testverpackung" maxLines="0" id="__text326_copy"/>
-				                                        <CheckBox xmlns="sap.m" id="__box0_copy" text="auswählen"/>
-				                                        </sap.ui.layout:content>
-				                                    
-				                                </sap.ui.layout:Grid>
-				                                </sap.ui.layout:content>
-				                            
-				                        </sap.ui.layout:Grid>
-				                        <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid2_copy2" defaultSpan="XL6 L6 M6 S12">
-				                            <sap.ui.layout:content>
-				                                <sap.ui.layout:Grid id="__grid3_copy2">
-				                                    <sap.ui.layout:content>
-				                                        <Image xmlns="sap.m" width="140px" height="140px" id="__image0_copy2" src="https://placehold.it/140x140" activeSrc="https://placehold.it/140x140"/>
-				                                        
-				                                    </sap.ui.layout:content>
-				                                    
-				                                </sap.ui.layout:Grid>
-				                                <sap.ui.layout:Grid id="__grid4_copy2" defaultSpan="XL12 L12 M12 S12">
-				                                    <sap.ui.layout:content>
-				                                        <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://bar-code" size="2em" id="__icon0_copy2"/>
-				                                        <Text xmlns="sap.m" text="Testverpackung" maxLines="0" id="__text326_copy2"/>
-				                                        <CheckBox xmlns="sap.m" id="__box0_copy2" text="auswählen"/>
-				                                        </sap.ui.layout:content>
-				                                    
-				                                </sap.ui.layout:Grid>
-				                                </sap.ui.layout:content>
-				                            
-				                        </sap.ui.layout:Grid>
-				                        <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid2_copy3" defaultSpan="XL6 L6 M6 S12">
-				                            <sap.ui.layout:content>
-				                                <sap.ui.layout:Grid id="__grid3_copy3">
-				                                    <sap.ui.layout:content>
-				                                        <Image xmlns="sap.m" width="140px" height="140px" id="__image0_copy3" src="https://placehold.it/140x140" activeSrc="https://placehold.it/140x140"/>
-				                                        
-				                                    </sap.ui.layout:content>
-				                                    
-				                                </sap.ui.layout:Grid>
-				                                <sap.ui.layout:Grid id="__grid4_copy3" defaultSpan="XL12 L12 M12 S12">
-				                                    <sap.ui.layout:content>
-				                                        <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://bar-code" size="2em" id="__icon0_copy3"/>
-				                                        <Text xmlns="sap.m" text="Testverpackung" maxLines="0" id="__text326_copy3"/>
-				                                        <CheckBox xmlns="sap.m" id="__box0_copy3" text="auswählen"/>
-				                                        </sap.ui.layout:content>
-				                                    
-				                                </sap.ui.layout:Grid>
-				                                </sap.ui.layout:content>
-				                            
-				                        </sap.ui.layout:Grid>
-				                        <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid2_copy4" defaultSpan="XL6 L6 M6 S12">
-				                            <sap.ui.layout:content>
-				                                <sap.ui.layout:Grid id="__grid3_copy4">
-				                                    <sap.ui.layout:content>
-				                                        <Image xmlns="sap.m" width="140px" height="140px" id="__image0_copy4" src="https://placehold.it/140x140" activeSrc="https://placehold.it/140x140"/>
-				                                        
-				                                    </sap.ui.layout:content>
-				                                    
-				                                </sap.ui.layout:Grid>
-				                                <sap.ui.layout:Grid id="__grid4_copy4" defaultSpan="XL12 L12 M12 S12">
-				                                    <sap.ui.layout:content>
-				                                        <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://bar-code" size="2em" id="__icon0_copy4"/>
-				                                        <Text xmlns="sap.m" text="Testverpackung" maxLines="0" id="__text326_copy4"/>
-				                                        <CheckBox xmlns="sap.m" id="__box0_copy4" text="auswählen"/>
-				                                        </sap.ui.layout:content>
-				                                    
-				                                </sap.ui.layout:Grid>
-				                                </sap.ui.layout:content>
-				                            
-				                        </sap.ui.layout:Grid>
-				                        <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid2_copy5" defaultSpan="XL6 L6 M6 S12">
-				                            <sap.ui.layout:content>
-				                                <sap.ui.layout:Grid id="__grid3_copy5">
-				                                    <sap.ui.layout:content>
-				                                        <Image xmlns="sap.m" width="140px" height="140px" id="__image0_copy5" src="https://placehold.it/140x140" activeSrc="https://placehold.it/140x140"/>
-				                                        
-				                                    </sap.ui.layout:content>
-				                                    
-				                                </sap.ui.layout:Grid>
-				                                <sap.ui.layout:Grid id="__grid4_copy5" defaultSpan="XL12 L12 M12 S12">
-				                                    <sap.ui.layout:content>
-				                                        <sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://bar-code" size="2em" id="__icon0_copy5"/>
-				                                        <Text xmlns="sap.m" text="Testverpackung" maxLines="0" id="__text326_copy5"/>
-				                                        <CheckBox xmlns="sap.m" id="__box0_copy5" text="auswählen"/>
-				                                        </sap.ui.layout:content>
-				                                    
-				                                </sap.ui.layout:Grid>
-				                                </sap.ui.layout:content>
-				                            
-				                        </sap.ui.layout:Grid>
-				                    </sap.ui.layout:content>
-				                    </sap.ui.layout:Grid>
-				                </content>
-				            </IconTabFilter>
-				            <IconTabSeparator id="__separator0"/>
-				            <IconTabFilter text="Send" icon="sap-icon://shipping-status" iconColor="Positive" id="__filter2">
-				                <content>
-				                    <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="__grid5">
-				                    <sap.ui.layout:content>
-				                        <Image width="150px" height="140px" id="__image1" src="https://placehold.it/300x300"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="gewählte Verpackung" id="__identifier1_copy6" text="Europalette"/><Text text="Kopftext(e):" maxLines="0" id="__text77"/>
-				                        <Input width="100%" id="__input2"/>
-				                    </sap.ui.layout:content>
-				                    </sap.ui.layout:Grid>
-				                    <Bar id="__bar3">
-				                        <contentLeft>
-				                            <Label text="Zusammenfassung" width="100%" id="__label1"/>
-				                        </contentLeft>
-				                    <contentRight>
-				                        <sap.ui.core:Icon src="sap-icon://action-settings" size="2em" xmlns:sap.ui.core="sap.ui.core" id="__icon1"/>
-				                    </contentRight>
-				                    </Bar>
-				                    <sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="__grid6" defaultSpan="XL3 L3 M4 S12">
-				                    <sap.ui.layout:content>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Handling Unit" id="__identifier1_copy7" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="ID-Art" id="__identifier1_copy8" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="HU intern" id="__identifier1_copy9" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Länge" id="__identifier1_copy10" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Höhe" id="__identifier1_copy11" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Breite" id="__identifier1_copy12" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Gesamtgewicht" id="__identifier1_copy13" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Ladungsgewicht" id="__identifier1_copy14" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="zulässiges Ladungsgewicht" id="__identifier1_copy15" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Eigengewicht" id="__identifier1_copy16" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Gesamtvolumen" id="__identifier1_copy17" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Ladungsvolumen" id="__identifier1_copy18" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="zulässiges Volumen" id="__identifier1_copy19" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Eigenvolumen" id="__identifier1_copy20" text="xxx"/>
-				                        <ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Werk" id="__identifier1_copy21" text="xxx"/>
-				                    </sap.ui.layout:content>
-				                    </sap.ui.layout:Grid>
-				                    <Button text="Senden" width="400px" id="__button0" activeIcon="sap-icon://bar-code" icon="sap-icon://bar-code"/>
-				                </content>
-				            </IconTabFilter></items>
-				    </IconTabBar>
->>>>>>> branch 'master' of https://github.com/SpeTimo/SAPUI5_MPS.git
+					<Bar id="__bar0">
+						<contentLeft>
+							<Label text="Kopfdaten" width="100%" id="lbl_kopfdaten" design="Bold"/>
+						</contentLeft>
+					</Bar>
+					<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="__grid1" class="sapUiSmallMarginTop" defaultSpan="XL4 L4 M6 S6">
+						<sap.ui.layout:content>
+							<ObjectIdentifier title="Auslieferung" id="AuslieferungIdent" text="{PaketID}"/>
+							<ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Belegdatum" text="{HandlingUnitID}" id="__identifier1_copy"/>
+							<ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Empfänger" id="__identifier1_copy2" text="{field1}"/>
+							<ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Adresse" text="Text" id="__identifier1_copy3"/>
+							<ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Positionen" text="Text" id="__identifier1_copy4"/>
+							<ObjectIdentifier xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" title="Packstücke" text="Text" id="__identifier1_copy5"/>
+						</sap.ui.layout:content>
+					</sap.ui.layout:Grid>
+					<IconTabBar selectedKey="filterscan" id="icontabbar">
+						<items>
+							<IconTabFilter text="Scan" icon="sap-icon://product" iconColor="Negative" key="filterscan" id="filterscan">
+								<content>
+									<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="__form0" validationSuccess="onFormSuccess">
+										<sap.ui.layout.form:content>
+											<sap.ui.core:Title text="Bitte tragen Sie eine Nummer ein:" id="__title0" validationSuccess="onFormSuccess" validationError="onFormError"/>
+											<Label text="Barcodescan" id="__label0"/>
+											<Input width="100%" id="BarcodescanInput" submit="onFormSubmit" value="{PaketID}" showValueHelp="true"/>
+											<Label id="Auslieferung" text="Auslieferung"/>
+											<Input width="100%" id="AuslieferungInput" submit="focustest"/>
+											<Label id="Transport" text="Transport"/>
+											<Input width="100%" id="TransportInput" submit="onFormSubmit"/>
+											<Label id="SD-Nummer" text="SD-Nummer"/>
+											<Input width="100%" id="SDNummerInput" submit="onFormSubmit"/></sap.ui.layout.form:content>
+										<sap.ui.layout.form:customData>
+											<sap.ui.core:CustomData key="w5g.dt.editable" value="true" id="__data14"/>
+										</sap.ui.layout.form:customData>
+									</sap.ui.layout.form:SimpleForm>
+								</content>
+							</IconTabFilter>
+							<IconTabSeparator id="__separator2"/>
+							<IconTabFilter xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="Pack" icon="sap-icon://add-product" iconColor="Critical" key="filterpack" id="filterpack">
+								<content>
+									<Bar id="__bar4">
+										<contentRight>
+											<sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://action-settings" size="2em" id="__icon2"/>
+										</contentRight>
+										<contentLeft>
+											<Label text="Verpackung auswählen" width="100%" id="__label3"/>
+										</contentLeft>
+									</Bar>
+									<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="__grid0" class="sapUiSmallMarginTop" defaultSpan="XL4 L4 M6 S12">
+										<sap.ui.layout:content>
+											<sap.ui.layout:Grid id="__grid2" defaultSpan="XL6 L6 M6 S12">
+												<sap.ui.layout:content>
+													<Image width="140px" height="140px" id="__image0" src="https://placehold.it/300x300"/>
+													<sap.ui.layout:Grid id="__grid4" defaultSpan="XL12 L12 M12 S12">
+														<sap.ui.layout:content>
+															<Text text="Umverpackung" maxLines="0" id="__text60"/>
+															<sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" src="sap-icon://bar-code" size="3em" id="__icon0"/>
+															<CheckBox xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" id="__box0" text="auswählen" select="selectPackmittel"/>
+														</sap.ui.layout:content>
+													</sap.ui.layout:Grid>
+												</sap.ui.layout:content>
+											</sap.ui.layout:Grid>
+											<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid2_copy" defaultSpan="XL6 L6 M6 S12">
+												<sap.ui.layout:content>
+													<Image xmlns="sap.m" width="140px" height="140px" id="__image0_copy" src="https://placehold.it/300x300"/>
+													<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid4_copy" defaultSpan="XL12 L12 M12 S12">
+														<sap.ui.layout:content>
+															<Text xmlns="sap.m" text="Umverpackung" maxLines="0" id="__text60_copy"/>
+															<sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" src="sap-icon://bar-code" size="3em" id="__icon0_copy"/>
+															<CheckBox xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" id="__box0_copy" text="auswählen"/>
+														</sap.ui.layout:content>
+													</sap.ui.layout:Grid>
+												</sap.ui.layout:content>
+											</sap.ui.layout:Grid>
+											<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid2_copy2" defaultSpan="XL6 L6 M6 S12">
+												<sap.ui.layout:content>
+													<Image xmlns="sap.m" width="140px" height="140px" id="__image0_copy2" src="https://placehold.it/300x300"/>
+													<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid4_copy2" defaultSpan="XL12 L12 M12 S12">
+														<sap.ui.layout:content>
+															<Text xmlns="sap.m" text="Umverpackung" maxLines="0" id="__text60_copy2"/>
+															<sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" src="sap-icon://bar-code" size="3em" id="__icon0_copy2"/>
+															<CheckBox xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" id="__box0_copy2" text="auswählen"/>
+														</sap.ui.layout:content>
+													</sap.ui.layout:Grid>
+												</sap.ui.layout:content>
+											</sap.ui.layout:Grid>
+											<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid2_copy3" defaultSpan="XL6 L6 M6 S12">
+												<sap.ui.layout:content>
+													<Image xmlns="sap.m" width="140px" height="140px" id="__image0_copy3" src="https://placehold.it/300x300"/>
+													<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid4_copy3" defaultSpan="XL12 L12 M12 S12">
+														<sap.ui.layout:content>
+															<Text xmlns="sap.m" text="Umverpackung" maxLines="0" id="__text60_copy3"/>
+															<sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" src="sap-icon://bar-code" size="3em" id="__icon0_copy3"/>
+															<CheckBox xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" id="__box0_copy3" text="auswählen"/>
+														</sap.ui.layout:content>
+													</sap.ui.layout:Grid>
+												</sap.ui.layout:content>
+											</sap.ui.layout:Grid>
+											<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid2_copy4" defaultSpan="XL6 L6 M6 S12">
+												<sap.ui.layout:content>
+													<Image xmlns="sap.m" width="140px" height="140px" id="__image0_copy4" src="https://placehold.it/300x300"/>
+													<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid4_copy4" defaultSpan="XL12 L12 M12 S12">
+														<sap.ui.layout:content>
+															<Text xmlns="sap.m" text="Umverpackung" maxLines="0" id="__text60_copy4"/>
+															<sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" src="sap-icon://bar-code" size="3em" id="__icon0_copy4"/>
+															<CheckBox xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" id="__box0_copy4" text="auswählen"/>
+														</sap.ui.layout:content>
+													</sap.ui.layout:Grid>
+												</sap.ui.layout:content>
+											</sap.ui.layout:Grid>
+											<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid2_copy5" defaultSpan="XL6 L6 M6 S12">
+												<sap.ui.layout:content>
+													<Image xmlns="sap.m" width="140px" height="140px" id="__image0_copy5" src="https://placehold.it/300x300"/>
+													<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" id="__grid4_copy5" defaultSpan="XL12 L12 M12 S12">
+														<sap.ui.layout:content>
+															<Text xmlns="sap.m" text="Umverpackung" maxLines="0" id="__text60_copy5"/>
+															<sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.layout="sap.ui.layout" src="sap-icon://bar-code" size="3em" id="__icon0_copy5"/>
+															<CheckBox xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" id="__box0_copy5" text="auswählen"/>
+														</sap.ui.layout:content>
+													</sap.ui.layout:Grid>
+												</sap.ui.layout:content>
+											</sap.ui.layout:Grid>
+										</sap.ui.layout:content>
+									</sap.ui.layout:Grid>
+								</content>
+							</IconTabFilter>
+							<IconTabSeparator id="__separator0"/>
+							<IconTabFilter text="Send" icon="sap-icon://shipping-status" iconColor="Positive" key="filtersend" id="filtersend">
+								<content>
+									<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="__grid5">
+										<sap.ui.layout:content>
+											<Image width="150px" height="140px" id="__image1" src="https://placehold.it/300x300"/>
+											<ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="gewählte Verpackung" id="__identifier1_copy6" text="Europalette"/><Text text="Kopftext(e):" maxLines="0" id="__text77"/>
+											<Input width="100%" id="__imageinput2" submit="submitKopftext"/>
+										</sap.ui.layout:content>
+									</sap.ui.layout:Grid>
+									<Bar id="__bar3">
+										<contentLeft>
+											<Label text="Zusammenfassung" width="100%" id="__label1"/>
+										</contentLeft>
+										<contentRight>
+											<sap.ui.core:Icon xmlns:sap.ui.core="sap.ui.core" src="sap-icon://action-settings" size="2em" id="__icon1"/>
+										</contentRight>
+									</Bar>
+									<sap.ui.layout:Grid xmlns:sap.ui.layout="sap.ui.layout" id="__grid6" class="sapUiSmallMarginTop" defaultSpan="XL3 L3 M4 S12">
+										<sap.ui.layout:content>
+											<ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Handling Unit" id="__identifier1_copy7" text="xxx"/>
+											<ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="ID-Art" id="__identifier1_copy8" text="xxx"/>
+											<ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="HU intern" id="__identifier1_copy9" text="xxx"/>
+											<ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Länge" id="__identifier1_copy10" text="xxx"/>
+											<ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Höhe" id="__identifier1_copy11" text="xxx"/>
+											<ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Breite" id="__identifier1_copy12" text="xxx"/>
+											<ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Gesamtgewicht" id="__identifier1_copy13" text="xxx"/>
+											<ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Ladungsgewicht" id="__identifier1_copy14" text="xxx"/>
+											<ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="zulässiges Ladungsgewicht" id="__identifier1_copy15" text="xxx"/>
+											<ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Eigengewicht" id="__identifier1_copy16" text="xxx"/>
+											<ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Gesamtvolumen" id="__identifier1_copy17" text="xxx"/>
+											<ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Ladungsvolumen" id="__identifier1_copy18" text="xxx"/>
+											<ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="zulässiges Volumen" id="__identifier1_copy19" text="xxx"/>
+											<ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Eigenvolumen" id="__identifier1_copy20" text="xxx"/>
+											<ObjectIdentifier xmlns="sap.m" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout="sap.ui.layout" title="Werk" id="__identifier1_copy21" text="xxx"/>
+											<Button text="Senden" width="200px" id="__button0" activeIcon="sap-icon://bar-code" icon="sap-icon://bar-code" iconFirst="false" press="onButtonSend" validationSuccess="onButtonSend"/>
+										</sap.ui.layout:content>
+									</sap.ui.layout:Grid>
+								</content>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+					<sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="__form1">
+						<sap.ui.layout.form:layout>
+							<sap.ui.layout.form:ResponsiveGridLayout id="__layout0"/>
+						</sap.ui.layout.form:layout>
+					</sap.ui.layout.form:Form>
 				</content>
 			</Page>
 		</pages>

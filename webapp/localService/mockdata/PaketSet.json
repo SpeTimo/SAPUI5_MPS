@@ -1,0 +1,131 @@
+[{
+	"PaketID": 114,
+	"HandlingUnitID": 3918,
+	"TCID": 7957,
+	"__metadata": {
+		"uri": "PaketSet(114)",
+		"type": "MPacktischFiori.Paket"
+	},
+	"HandlingUnit": {
+		"__deferred": {
+			"uri": "PaketSet(114)/HandlingUnit"
+		}
+	}
+}, {
+	"PaketID": 5152,
+	"HandlingUnitID": 8496,
+	"TCID": 9622,
+	"__metadata": {
+		"uri": "PaketSet(5152)",
+		"type": "MPacktischFiori.Paket"
+	},
+	"HandlingUnit": {
+		"__deferred": {
+			"uri": "PaketSet(5152)/HandlingUnit"
+		}
+	}
+}, {
+	"PaketID": 1389,
+	"HandlingUnitID": 2186,
+	"TCID": 7558,
+	"__metadata": {
+		"uri": "PaketSet(1389)",
+		"type": "MPacktischFiori.Paket"
+	},
+	"HandlingUnit": {
+		"__deferred": {
+			"uri": "PaketSet(1389)/HandlingUnit"
+		}
+	}
+}, {
+	"PaketID": 9333,
+	"HandlingUnitID": 1174,
+	"TCID": 1954,
+	"__metadata": {
+		"uri": "PaketSet(9333)",
+		"type": "MPacktischFiori.Paket"
+	},
+	"HandlingUnit": {
+		"__deferred": {
+			"uri": "PaketSet(9333)/HandlingUnit"
+		}
+	}
+}, {
+	"PaketID": 7193,
+	"HandlingUnitID": 3802,
+	"TCID": 1416,
+	"__metadata": {
+		"uri": "PaketSet(7193)",
+		"type": "MPacktischFiori.Paket"
+	},
+	"HandlingUnit": {
+		"__deferred": {
+			"uri": "PaketSet(7193)/HandlingUnit"
+		}
+	}
+}, {
+	"PaketID": 7372,
+	"HandlingUnitID": 1623,
+	"TCID": 4644,
+	"__metadata": {
+		"uri": "PaketSet(7372)",
+		"type": "MPacktischFiori.Paket"
+	},
+	"HandlingUnit": {
+		"__deferred": {
+			"uri": "PaketSet(7372)/HandlingUnit"
+		}
+	}
+}, {
+	"PaketID": 1276,
+	"HandlingUnitID": 6438,
+	"TCID": 9357,
+	"__metadata": {
+		"uri": "PaketSet(1276)",
+		"type": "MPacktischFiori.Paket"
+	},
+	"HandlingUnit": {
+		"__deferred": {
+			"uri": "PaketSet(1276)/HandlingUnit"
+		}
+	}
+}, {
+	"PaketID": 4242,
+	"HandlingUnitID": 7377,
+	"TCID": 606,
+	"__metadata": {
+		"uri": "PaketSet(4242)",
+		"type": "MPacktischFiori.Paket"
+	},
+	"HandlingUnit": {
+		"__deferred": {
+			"uri": "PaketSet(4242)/HandlingUnit"
+		}
+	}
+}, {
+	"PaketID": 9707,
+	"HandlingUnitID": 1868,
+	"TCID": 4865,
+	"__metadata": {
+		"uri": "PaketSet(9707)",
+		"type": "MPacktischFiori.Paket"
+	},
+	"HandlingUnit": {
+		"__deferred": {
+			"uri": "PaketSet(9707)/HandlingUnit"
+		}
+	}
+}, {
+	"PaketID": 7833,
+	"HandlingUnitID": 8888,
+	"TCID": 9448,
+	"__metadata": {
+		"uri": "PaketSet(7833)",
+		"type": "MPacktischFiori.Paket"
+	},
+	"HandlingUnit": {
+		"__deferred": {
+			"uri": "PaketSet(7833)/HandlingUnit"
+		}
+	}
+}]

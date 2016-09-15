@@ -1,0 +1,141 @@
+[{
+	"BelegkopfID": 1126,
+	"Datum": "/Date(1459240392000)/",
+	"Adresse": "Adresse 1",
+	"Belegart": "Belegart 1",
+	"__metadata": {
+		"uri": "BelegkopfSet(1126)",
+		"type": "MPacktischFiori.Belegkopf"
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "BelegkopfSet(1126)/BelegpositionSet"
+		}
+	}
+}, {
+	"BelegkopfID": 5694,
+	"Datum": "/Date(1081240392000)/",
+	"Adresse": "Adresse 2",
+	"Belegart": "Belegart 2",
+	"__metadata": {
+		"uri": "BelegkopfSet(5694)",
+		"type": "MPacktischFiori.Belegkopf"
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "BelegkopfSet(5694)/BelegpositionSet"
+		}
+	}
+}, {
+	"BelegkopfID": 715,
+	"Datum": "/Date(1056184392000)/",
+	"Adresse": "Adresse 3",
+	"Belegart": "Belegart 3",
+	"__metadata": {
+		"uri": "BelegkopfSet(715)",
+		"type": "MPacktischFiori.Belegkopf"
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "BelegkopfSet(715)/BelegpositionSet"
+		}
+	}
+}, {
+	"BelegkopfID": 570,
+	"Datum": "/Date(1561797192000)/",
+	"Adresse": "Adresse 4",
+	"Belegart": "Belegart 4",
+	"__metadata": {
+		"uri": "BelegkopfSet(570)",
+		"type": "MPacktischFiori.Belegkopf"
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "BelegkopfSet(570)/BelegpositionSet"
+		}
+	}
+}, {
+	"BelegkopfID": 5891,
+	"Datum": "/Date(1228901592000)/",
+	"Adresse": "Adresse 5",
+	"Belegart": "Belegart 5",
+	"__metadata": {
+		"uri": "BelegkopfSet(5891)",
+		"type": "MPacktischFiori.Belegkopf"
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "BelegkopfSet(5891)/BelegpositionSet"
+		}
+	}
+}, {
+	"BelegkopfID": 1742,
+	"Datum": "/Date(1138354392000)/",
+	"Adresse": "Adresse 6",
+	"Belegart": "Belegart 6",
+	"__metadata": {
+		"uri": "BelegkopfSet(1742)",
+		"type": "MPacktischFiori.Belegkopf"
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "BelegkopfSet(1742)/BelegpositionSet"
+		}
+	}
+}, {
+	"BelegkopfID": 750,
+	"Datum": "/Date(1173951192000)/",
+	"Adresse": "Adresse 7",
+	"Belegart": "Belegart 7",
+	"__metadata": {
+		"uri": "BelegkopfSet(750)",
+		"type": "MPacktischFiori.Belegkopf"
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "BelegkopfSet(750)/BelegpositionSet"
+		}
+	}
+}, {
+	"BelegkopfID": 6126,
+	"Datum": "/Date(1331544792000)/",
+	"Adresse": "Adresse 8",
+	"Belegart": "Belegart 8",
+	"__metadata": {
+		"uri": "BelegkopfSet(6126)",
+		"type": "MPacktischFiori.Belegkopf"
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "BelegkopfSet(6126)/BelegpositionSet"
+		}
+	}
+}, {
+	"BelegkopfID": 4506,
+	"Datum": "/Date(1340958792000)/",
+	"Adresse": "Adresse 9",
+	"Belegart": "Belegart 9",
+	"__metadata": {
+		"uri": "BelegkopfSet(4506)",
+		"type": "MPacktischFiori.Belegkopf"
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "BelegkopfSet(4506)/BelegpositionSet"
+		}
+	}
+}, {
+	"BelegkopfID": 1211,
+	"Datum": "/Date(1109842392000)/",
+	"Adresse": "Adresse 10",
+	"Belegart": "Belegart 10",
+	"__metadata": {
+		"uri": "BelegkopfSet(1211)",
+		"type": "MPacktischFiori.Belegkopf"
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "BelegkopfSet(1211)/BelegpositionSet"
+		}
+	}
+}]

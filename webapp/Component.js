@@ -1,12 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-<<<<<<< HEAD
 	"mcl/model/models"
 	],
-=======
-	"mcl/model/models"],
->>>>>>> branch 'master' of https://github.com/SpeTimo/SAPUI5_MPS.git
 function(UIComponent, Device, models) {
 	"use strict";
 

@@ -1,0 +1,241 @@
+[{
+	"HandlingUnitID": 5912,
+	"ReferenzInternID": 1244,
+	"PackmittelID": "PackmittelID 1",
+	"BelegpositionID": "BelegpositionID 1",
+	"__metadata": {
+		"uri": "HandlingUnitSet(5912)",
+		"type": "MPacktischFiori.HandlingUnit"
+	},
+	"PaketSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(5912)/PaketSet"
+		}
+	},
+	"Packmittel": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(5912)/Packmittel"
+		}
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(5912)/BelegpositionSet"
+		}
+	}
+}, {
+	"HandlingUnitID": 4305,
+	"ReferenzInternID": 4024,
+	"PackmittelID": "PackmittelID 2",
+	"BelegpositionID": "BelegpositionID 2",
+	"__metadata": {
+		"uri": "HandlingUnitSet(4305)",
+		"type": "MPacktischFiori.HandlingUnit"
+	},
+	"PaketSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(4305)/PaketSet"
+		}
+	},
+	"Packmittel": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(4305)/Packmittel"
+		}
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(4305)/BelegpositionSet"
+		}
+	}
+}, {
+	"HandlingUnitID": 8513,
+	"ReferenzInternID": 2597,
+	"PackmittelID": "PackmittelID 3",
+	"BelegpositionID": "BelegpositionID 3",
+	"__metadata": {
+		"uri": "HandlingUnitSet(8513)",
+		"type": "MPacktischFiori.HandlingUnit"
+	},
+	"PaketSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(8513)/PaketSet"
+		}
+	},
+	"Packmittel": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(8513)/Packmittel"
+		}
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(8513)/BelegpositionSet"
+		}
+	}
+}, {
+	"HandlingUnitID": 6058,
+	"ReferenzInternID": 6939,
+	"PackmittelID": "PackmittelID 4",
+	"BelegpositionID": "BelegpositionID 4",
+	"__metadata": {
+		"uri": "HandlingUnitSet(6058)",
+		"type": "MPacktischFiori.HandlingUnit"
+	},
+	"PaketSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(6058)/PaketSet"
+		}
+	},
+	"Packmittel": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(6058)/Packmittel"
+		}
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(6058)/BelegpositionSet"
+		}
+	}
+}, {
+	"HandlingUnitID": 7796,
+	"ReferenzInternID": 1009,
+	"PackmittelID": "PackmittelID 5",
+	"BelegpositionID": "BelegpositionID 5",
+	"__metadata": {
+		"uri": "HandlingUnitSet(7796)",
+		"type": "MPacktischFiori.HandlingUnit"
+	},
+	"PaketSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(7796)/PaketSet"
+		}
+	},
+	"Packmittel": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(7796)/Packmittel"
+		}
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(7796)/BelegpositionSet"
+		}
+	}
+}, {
+	"HandlingUnitID": 7111,
+	"ReferenzInternID": 2542,
+	"PackmittelID": "PackmittelID 6",
+	"BelegpositionID": "BelegpositionID 6",
+	"__metadata": {
+		"uri": "HandlingUnitSet(7111)",
+		"type": "MPacktischFiori.HandlingUnit"
+	},
+	"PaketSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(7111)/PaketSet"
+		}
+	},
+	"Packmittel": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(7111)/Packmittel"
+		}
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(7111)/BelegpositionSet"
+		}
+	}
+}, {
+	"HandlingUnitID": 1660,
+	"ReferenzInternID": 1167,
+	"PackmittelID": "PackmittelID 7",
+	"BelegpositionID": "BelegpositionID 7",
+	"__metadata": {
+		"uri": "HandlingUnitSet(1660)",
+		"type": "MPacktischFiori.HandlingUnit"
+	},
+	"PaketSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(1660)/PaketSet"
+		}
+	},
+	"Packmittel": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(1660)/Packmittel"
+		}
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(1660)/BelegpositionSet"
+		}
+	}
+}, {
+	"HandlingUnitID": 10,
+	"ReferenzInternID": 1714,
+	"PackmittelID": "PackmittelID 8",
+	"BelegpositionID": "BelegpositionID 8",
+	"__metadata": {
+		"uri": "HandlingUnitSet(10)",
+		"type": "MPacktischFiori.HandlingUnit"
+	},
+	"PaketSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(10)/PaketSet"
+		}
+	},
+	"Packmittel": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(10)/Packmittel"
+		}
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(10)/BelegpositionSet"
+		}
+	}
+}, {
+	"HandlingUnitID": 8318,
+	"ReferenzInternID": 1142,
+	"PackmittelID": "PackmittelID 9",
+	"BelegpositionID": "BelegpositionID 9",
+	"__metadata": {
+		"uri": "HandlingUnitSet(8318)",
+		"type": "MPacktischFiori.HandlingUnit"
+	},
+	"PaketSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(8318)/PaketSet"
+		}
+	},
+	"Packmittel": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(8318)/Packmittel"
+		}
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(8318)/BelegpositionSet"
+		}
+	}
+}, {
+	"HandlingUnitID": 8073,
+	"ReferenzInternID": 8160,
+	"PackmittelID": "PackmittelID 10",
+	"BelegpositionID": "BelegpositionID 10",
+	"__metadata": {
+		"uri": "HandlingUnitSet(8073)",
+		"type": "MPacktischFiori.HandlingUnit"
+	},
+	"PaketSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(8073)/PaketSet"
+		}
+	},
+	"Packmittel": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(8073)/Packmittel"
+		}
+	},
+	"BelegpositionSet": {
+		"__deferred": {
+			"uri": "HandlingUnitSet(8073)/BelegpositionSet"
+		}
+	}
+}]
