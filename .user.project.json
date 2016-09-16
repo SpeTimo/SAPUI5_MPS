@@ -20,7 +20,7 @@
         "id": 3343122,
         "runnerId": "webapprunner",
         "displayName": "Run index.html",
-        "lastRunTimeStamp": 1473931808109
+        "lastRunTimeStamp": 1473950080618
       }
     },
     {
@@ -43,8 +43,7 @@
       "_metadata": {
         "id": 7820298,
         "runnerId": "fiorirunner",
-        "displayName": "Run Component.js",
-        "lastRunTimeStamp": 1473864853820
+        "displayName": "Run Component.js"
       }
     }
   ]

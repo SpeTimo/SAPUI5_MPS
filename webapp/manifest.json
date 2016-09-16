@@ -15,21 +15,12 @@
 			"version": "0.0.0"
 		},
 		"dataSources": {
-			"Demo": {
-				"uri": "",
+			"GWSAMPLE_BASIC": {
+				"uri": "/sap/opu/odata/iwbep/GWSAMPLE_BASIC/",
 				"type": "OData",
 				"settings": {
 					"odataVersion": "2.0",
-					"localUri": "localService/metadata.xml"
-				}
-			},
-			"MPacktischFiori": {
-				"uri": "",
-				"type": "OData",
-				"settings": {
-					"odataVersion": "2.0",
-					"localUri": "model/metadata.xml",
-					"annotations": []
+					"localUri": "localservice/GWSAMPLE_BASIC/metadata.xml"
 				}
 			}
 		},
@@ -39,7 +30,7 @@
 		"_version": "1.1.0",
 		"technology": "UI5",
 		"icons": {
-			"icon": "",
+			"icon": "sap-icon://accelerated",
 			"favIcon": "",
 			"phone": "",
 			"phone@2": "",
@@ -53,14 +44,16 @@
 		},
 		"supportedThemes": ["sap_hcb", "sap_bluecrystal"]
 	},
+
 	"sap.ui5": {
-		"_version": "1.1.0",
+		"_version": "1.2.0",
 		"rootView": {
 			"viewName": "mcl.view.Packtisch",
 			"type": "XML"
 		},
+
 		"dependencies": {
-			"minUI5Version": "1.30.0",
+			"minUI5Version": "1.36.0",
 			"libs": {
 				"sap.ui.core": {},
 				"sap.m": {},
@@ -77,6 +70,16 @@
 				"settings": {
 					"bundleName": "mcl.i18n.i18n"
 				}
+			},
+			"": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "",
+					"defaultBindingMode": "TwoWay",
+					"defaultCountMode": ""
+				},
+				"dataSource": "GWSAMPLE_BASIC",
+				"preload": ""
 			}
 		},
 		"resources": {
